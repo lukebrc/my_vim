@@ -42,7 +42,6 @@ imap <M-v> <Esc>"+pi
 "imap <C-y> <Esc>"+pi
 imap <M-f> <C-Right>
 imap <M-b> <C-Left>
-"imap <C-d> <Delete>
 
 map <C-h> :NERDTree<Cr>
 nmap ,n :NERDTreeFind<Cr>
@@ -55,9 +54,10 @@ nnoremap <Leader># :Bsgrep <C-r><C-w><Cr>
 nnoremap <Leader>e :b#<Cr>
 nnoremap <Leader>N :set nu<Cr>
 nnoremap <Leader>n :set nonu<Cr>
-nnoremap <Leader>* :Grepper -tool ag -cword -noprompt<cr>
+nnoremap <Leader>* :Grepper -cword -noprompt<cr>
 nnoremap <Leader>g :Bsgrep 
 nnoremap <Leader>G :Grepper<Cr>
+map <Leader>x <Esc>:!./%<Cr>
 
 nnoremap <Leader>B :Buffers<Cr>
 nnoremap <Leader>L :Lines<Cr>
