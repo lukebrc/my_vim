@@ -27,6 +27,10 @@ imap jj <Esc>
 map <c-w><c-a> :FZF<cr>
 map ,b :b#<cr>
 map ,, :b#<cr>
+map gl $
+map gh ^
+map gj G
+map gk gg
 
 nnoremap yy yy"+yy
 
