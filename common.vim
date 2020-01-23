@@ -1,3 +1,5 @@
+let mapleader=" "
+
 set nocp
 call pathogen#infect()
 syntax on
@@ -68,6 +70,11 @@ nnoremap <Leader>L :Lines<Cr>
 nnoremap <Leader>f :echo @%<Cr>
 nnoremap <Leader>h :e %:h
 nnoremap <Leader>H :e %:h<Cr>
+nnoremap <Leader>q :q<Cr>
+nnoremap <Leader>l $
+nnoremap <Leader>h ^
+nnoremap <Leader>j G
+nnoremap <Leader>k gg
 
 "zapisz plik jako sudo
 cmap w!! %!sudo tee > /dev/null %
