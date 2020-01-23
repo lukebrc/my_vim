@@ -84,6 +84,10 @@ set clipboard=unnamedplus
 map <C-y> "+y
 map <c-w><C-p> "+p
 
+vmap <Leader>' "ay
+map <Leader>' "ayy<Cr>
+nnoremap <Leader>, "ap<Cr>
+
 " Wstawianie daty
 map <Leader>d :put= strftime('%c')<Cr>kJi 
 
