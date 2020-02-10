@@ -76,6 +76,15 @@ nnoremap <Leader>h ^
 nnoremap <Leader>j G
 nnoremap <Leader>k gg
 
+" XML folding use shortcuts: za, zr or zM
+augroup XML
+autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+
 "zapisz plik jako sudo
 cmap w!! %!sudo tee > /dev/null %
 
