@@ -6,6 +6,12 @@ syntax on
 filetype plugin indent on
 call pathogen#infect()
 
+call plug#begin('~/.vim/plugged')
+" FZF
+" If installed using git
+Plug '~/.fzf'
+call plug#end()
+
 set encoding=utf-8
 set visualbell
 
@@ -14,7 +20,7 @@ set sw=4
 " set number
 set mouse=a
 set cm=blowfish2
-colorscheme koehler
+colorscheme desert
 set guioptions-=T  "remove toolbar
 "set guioptions-=m  "remove menu bar
 set autoindent
@@ -27,6 +33,7 @@ nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>
 imap jj <Esc>
 map <c-w><c-a> :FZF<cr>
+nnoremap <Leader>a :FZF<cr>
 map ,b :b#<cr>
 map ,, :b#<cr>
 map gl $
@@ -75,6 +82,7 @@ nnoremap <Leader>l $
 nnoremap <Leader>h ^
 nnoremap <Leader>j G
 nnoremap <Leader>k gg
+nnoremap <Leader>8 *
 
 " XML folding use shortcuts: za, zr or zM
 augroup XML
@@ -83,7 +91,7 @@ autocmd!
 augroup END
 
 let g:xml_syntax_folding=1
-au FileType xml setlocal foldmethod=syntax
+" au FileType xml setlocal foldmethod=syntax
 
 "zapisz plik jako sudo
 cmap w!! %!sudo tee > /dev/null %
