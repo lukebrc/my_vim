@@ -54,6 +54,7 @@ nmap ,n :NERDTreeFind<Cr>
 nmap ,m :NERDTreeToggle<Cr>
 
 nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>
+nnoremap <Leader>w :w<Cr>
 nnoremap <Leader># :Bsgrep <C-r><C-w><Cr>
 "nnoremap <Leader>g :Rsgrep <C-r><C-w><Cr>
 "nnoremap <Leader>r :Rgrep <C-r><C-w><Cr>
@@ -73,8 +74,10 @@ nnoremap <Leader>H :e %:h<Cr>
 nnoremap <Leader>q :q<Cr>
 nnoremap <Leader>l $
 nnoremap <Leader>h ^
-nnoremap <Leader>j G
-nnoremap <Leader>k gg
+nnoremap <Leader>j <c-f>
+nnoremap <Leader>J G
+nnoremap <Leader>k <c-b>
+nnoremap <Leader>K gg
 
 "zapisz plik jako sudo
 cmap w!! %!sudo tee > /dev/null %
