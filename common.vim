@@ -6,6 +6,12 @@ syntax on
 filetype plugin indent on
 call pathogen#infect()
 
+call plug#begin('~/.vim/plugged')
+" FZF
+" If installed using git
+Plug '~/.fzf'
+call plug#end()
+
 set encoding=utf-8
 set visualbell
 
@@ -14,7 +20,7 @@ set sw=4
 " set number
 set mouse=a
 set cm=blowfish2
-colorscheme koehler
+colorscheme desert
 set guioptions-=T  "remove toolbar
 "set guioptions-=m  "remove menu bar
 set autoindent
@@ -27,6 +33,7 @@ nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>
 imap jj <Esc>
 map <c-w><c-a> :FZF<cr>
+nnoremap <Leader>a :FZF<cr>
 map ,b :b#<cr>
 map ,, :b#<cr>
 map gl $
@@ -80,6 +87,16 @@ nnoremap <Leader>k <c-b>
 nnoremap <Leader>K gg
 
 map <Leader><Leader> V
+nnoremap <Leader>8 *
+
+" XML folding use shortcuts: za, zr or zM
+augroup XML
+autocmd!
+    autocmd FileType xml setlocal foldmethod=indent foldlevelstart=999 foldminlines=0
+augroup END
+
+let g:xml_syntax_folding=1
+" au FileType xml setlocal foldmethod=syntax
 
 "zapisz plik jako sudo
 cmap w!! %!sudo tee > /dev/null %
@@ -88,6 +105,10 @@ cmap w!! %!sudo tee > /dev/null %
 set clipboard=unnamedplus
 map <C-y> "+y
 map <c-w><C-p> "+p
+
+vmap <Leader>' "ay
+map <Leader>' "ayy<Cr>
+nnoremap <Leader>, "ap<Cr>
 
 " Wstawianie daty
 map <Leader>d :put= strftime('%c')<Cr>kJi 
