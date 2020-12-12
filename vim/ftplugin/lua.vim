@@ -9,9 +9,9 @@ function! LuaSearchFun()
    execute 'normal! ' . "/function\\s\\+\\([0-9a-zA-Z_\.]\*:\\)\\?" . @z . "\\s\*(" . "\r"
 endfunction
 
-"nnoremap <Leader>f "zyiw:exe "/function\\s\*\\([0-9a-zA-Z_\.]\*:\\)\\?".@z.""<Cr>
-nnoremap <Leader>f :call LuaSearchFun()<Cr>
-nnoremap <Leader>F "zyiw:exe "Bsgrep function\\s\*\\([0-9a-zA-Z_\.]\*:\\)\\?".@z.""<Cr>
+"nnoremap <Leader>g "zyiw:exe "/function\\s\*\\([0-9a-zA-Z_\.]\*:\\)\\?".@z.""<Cr>
+nnoremap <Leader>g :call LuaSearchFun()<Cr>
+nnoremap <Leader>G "zyiw:exe "Bsgrep function\\s\*\\([0-9a-zA-Z_\.]\*:\\)\\?".@z.""<Cr>
 
 nnoremap <Leader>R "zyiw:exe "Bsgrep ".@z.""<Cr>
 nnoremap <Leader>r "zyiw<Cr>/[ .:]<C-r>z(<Cr>

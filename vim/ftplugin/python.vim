@@ -9,8 +9,8 @@ function! PythonSearchFun()
    execute 'normal! ' . "/def\\s\\*" . @z . "\\s\*[({\\n]" . "\r"
 endfunction
 
-map <leader>f :execute "/def " . expand("<cword>") . "\\s\*[({\\n]"<Cr>
-map <leader>F :execute "Bsgrep def " . expand("<cword>") . "\\s\*[({\\n}"<Cr><Cr>
+map <leader>g :execute "/def " . expand("<cword>") . "\\s\*[({\\n]"<Cr>
+map <leader>G :execute "Bsgrep def " . expand("<cword>") . "\\s\*[({\\n}"<Cr><Cr>
 
 map <leader>c :execute "/class " . expand("<cword>") . "\\s\*[({\\n]"<Cr>
 map <leader>C :execute "Bsgrep class " . expand("<cword>") . "\\s\*[({\\n]"<Cr><Cr>

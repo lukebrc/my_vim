@@ -34,8 +34,6 @@ imap <C-s> <Esc>:w<CR>
 imap jj <Esc>
 map <c-w><c-a> :FZF<cr>
 nnoremap <Leader>a :FZF<cr>
-map ,b :b#<cr>
-map ,, :b#<cr>
 map gl $
 map gh ^
 map gj G
@@ -60,21 +58,23 @@ map <C-h> :NERDTree<Cr>
 nmap ,n :NERDTreeFind<Cr>
 nmap ,m :NERDTreeToggle<Cr>
 
-nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>
-nnoremap <Leader># :Bsgrep <C-r><C-w><Cr>
 "nnoremap <Leader>g :Rsgrep <C-r><C-w><Cr>
 "nnoremap <Leader>r :Rgrep <C-r><C-w><Cr>
 nnoremap <Leader>e :b#<Cr>
+nnoremap <Leader>f :Bsgrep
+nnoremap <Leader>F :Grepper<Cr>
 nnoremap <Leader>N :set nu<Cr>
 nnoremap <Leader>n :set nonu<Cr>
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>
+nnoremap <Leader>w :w<Cr>
+nnoremap <Leader>o <C-w><C-w><Cr>
 nnoremap <Leader>* :Grepper -cword -noprompt<cr>
-nnoremap <Leader>g :Bsgrep 
-nnoremap <Leader>G :Grepper<Cr>
+nnoremap <Leader># :Bsgrep <C-r><C-w><Cr>
+nnoremap <Leader>b :b
 map <Leader>x <Esc>:!./%<Cr>
 
 nnoremap <Leader>B :Buffers<Cr>
 nnoremap <Leader>L :Lines<Cr>
-nnoremap <Leader>f :echo @%<Cr>
 nnoremap <Leader>h :e %:h
 nnoremap <Leader>H :e %:h<Cr>
 nnoremap <Leader>q :q<Cr>
@@ -106,7 +106,7 @@ map <Leader>' "ayy<Cr>
 nnoremap <Leader>, "ap<Cr>
 
 " Wstawianie daty
-map <Leader>d :put= strftime('%c')<Cr>kJi 
+map <Leader>d :put= strftime('%c')<Cr>kJi
 
 " Buftabline
 nmap <leader>1 <Plug>BufTabLine.Go(1)
