@@ -80,8 +80,12 @@ nnoremap <Leader>H :e %:h<Cr>
 nnoremap <Leader>q :q<Cr>
 nnoremap <Leader>l $
 nnoremap <Leader>h ^
-nnoremap <Leader>j G
-nnoremap <Leader>k gg
+nnoremap <Leader>j <c-f>
+nnoremap <Leader>J G
+nnoremap <Leader>k <c-b>
+nnoremap <Leader>K gg
+
+map <Leader><Leader> V
 nnoremap <Leader>8 *
 
 " XML folding use shortcuts: za, zr or zM
@@ -109,14 +113,14 @@ nnoremap <Leader>, "ap<Cr>
 map <Leader>d :put= strftime('%c')<Cr>kJi
 
 " Buftabline
-nmap <leader>1 <Plug>BufTabLine.Go(1)
-nmap <leader>2 <Plug>BufTabLine.Go(2)
-nmap <leader>3 <Plug>BufTabLine.Go(3)
-nmap <leader>4 <Plug>BufTabLine.Go(4)
-nmap <leader>5 <Plug>BufTabLine.Go(5)
-nmap <leader>6 <Plug>BufTabLine.Go(6)
-nmap <leader>7 <Plug>BufTabLine.Go(7)
-nmap <leader>8 <Plug>BufTabLine.Go(8)
-nmap <leader>9 <Plug>BufTabLine.Go(9)
-nmap <leader>0 <Plug>BufTabLine.Go(10)
+nmap <Leader>1 <Plug>BufTabLine.Go(1)
+nmap <Leader>2 <Plug>BufTabLine.Go(2)
+nmap <Leader>3 <Plug>BufTabLine.Go(3)
+nmap <Leader>4 <Plug>BufTabLine.Go(4)
+nmap <Leader>5 <Plug>BufTabLine.Go(5)
+nmap <Leader>6 <Plug>BufTabLine.Go(6)
+nmap <Leader>7 <Plug>BufTabLine.Go(7)
+nmap <Leader>8 <Plug>BufTabLine.Go(8)
+nmap <Leader>9 <Plug>BufTabLine.Go(9)
+nmap <Leader>0 <Plug>BufTabLine.Go(10)
 
