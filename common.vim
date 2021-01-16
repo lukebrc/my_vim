@@ -17,7 +17,8 @@ set visualbell
 
 set ts=4
 set sw=4
-" set number
+set number
+set relativenumber
 set mouse=a
 set cm=blowfish2
 colorscheme desert
