@@ -70,7 +70,7 @@ nnoremap <Leader>w :w<Cr>
 nnoremap <Leader>o <C-w><C-w><Cr>
 nnoremap <Leader>* :Grepper -cword -noprompt<cr>
 nnoremap <Leader># :Bsgrep <C-r><C-w><Cr>
-nnoremap <Leader>b :b
+nnoremap <Leader>b :b 
 map <Leader>x <Esc>:!./%<Cr>
 
 nnoremap <Leader>B :Buffers<Cr>
@@ -110,7 +110,7 @@ map <Leader>' "ayy<Cr>
 nnoremap <Leader>, "ap<Cr>
 
 " Wstawianie daty
-map <Leader>d :put= strftime('%c')<Cr>kJi
+map <Leader>D :put= strftime('%c')<Cr>kJi
 
 " Buftabline
 nmap <Leader>1 <Plug>BufTabLine.Go(1)
