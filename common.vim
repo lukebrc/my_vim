@@ -85,6 +85,7 @@ nnoremap <Leader>j <c-f>
 nnoremap <Leader>J G
 nnoremap <Leader>k <c-b>
 nnoremap <Leader>K gg
+vnoremap <Leader>Y :w !xclip -i -sel c<CR><CR>
 
 map <Leader><Leader> V
 nnoremap <Leader>8 *
