@@ -85,7 +85,12 @@ nnoremap <Leader>j <c-f>
 nnoremap <Leader>J G
 nnoremap <Leader>k <c-b>
 nnoremap <Leader>K gg
-vnoremap <Leader>Y :w !xclip -i -sel c<CR><CR>
+" yank to clipboard
+vnoremap <Leader>y :w !xclip -i -sel c<CR><CR>
+vnoremap Y :w !xclip -i -sel c<CR><CR>
+" paste from clipboard
+vnoremap <Leader>p :w !xsel -b<CR><CR>
+vnoremap <Leader>P :w !xsel -b<CR><CR>
 
 map <Leader><Leader> V
 nnoremap <Leader>8 *
