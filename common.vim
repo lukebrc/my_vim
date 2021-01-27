@@ -55,6 +55,7 @@ imap <M-v> <Esc>"+pi
 imap <M-f> <C-Right>
 imap <M-b> <C-Left>
 
+autocmd VimEnter * NERDTree | wincmd p
 map <C-h> :NERDTree<Cr>
 nmap ,n :NERDTreeFind<Cr>
 nmap ,m :NERDTreeToggle<Cr>
@@ -130,4 +131,3 @@ nmap <Leader>7 <Plug>BufTabLine.Go(7)
 nmap <Leader>8 <Plug>BufTabLine.Go(8)
 nmap <Leader>9 <Plug>BufTabLine.Go(9)
 nmap <Leader>0 <Plug>BufTabLine.Go(10)
-
