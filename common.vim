@@ -55,7 +55,7 @@ imap <M-v> <Esc>"+pi
 imap <M-f> <C-Right>
 imap <M-b> <C-Left>
 
-autocmd VimEnter * NERDTree | wincmd p
+"autocmd VimEnter * NERDTree | wincmd p
 map <C-h> :NERDTree<Cr>
 nmap ,n :NERDTreeFind<Cr>
 nmap ,m :NERDTreeToggle<Cr>
