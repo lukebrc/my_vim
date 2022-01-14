@@ -7,9 +7,11 @@ filetype plugin indent on
 call pathogen#infect()
 
 call plug#begin('~/.vim/plugged')
-" FZF
-" If installed using git
 Plug '~/.fzf'
+Plug 'lotabout/skim', { 'dir': '~/.skim', 'do': './install' }
+Plug 'lotabout/skim.vim'
+
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 set encoding=utf-8
@@ -33,8 +35,10 @@ map <C-e> :Bclose<cr>
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>
 imap jj <Esc>
+
 map <c-w><c-a> :FZF<cr>
 nnoremap <Leader>a :FZF<cr>
+
 map gl $
 map gh ^
 map gj G
